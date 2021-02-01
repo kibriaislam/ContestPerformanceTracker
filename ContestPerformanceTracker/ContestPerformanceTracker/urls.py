@@ -20,5 +20,8 @@ from mainSite import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='home'),
+    path('profile/',views.profile,name='profile'),
+    path('contest/',views.upcomingcontest,name='contest'),
     path('account/',include('account.urls')),
+    path('forum/',include('forum.urls'))
 ]

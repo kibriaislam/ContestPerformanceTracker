@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainSite',
     'account',
+    'forum',
 
 ]
 
@@ -71,7 +72,7 @@ TEMPLATES = [
         },
     },
 ]
-AUTH_USER_MODEL= 'account.Account'
+
 WSGI_APPLICATION = 'ContestPerformanceTracker.wsgi.application'
 
 

@@ -1,22 +1,23 @@
 {% extends 'base.html' %}
+{% load static%}
 
 {% block title %}
 Daffodil International University
 {% endblock %}
 
 {% block body%}
-<section id="banner" style="background-image: linear-gradient(to right,#a517ba,#5f1782);"> 
+<section id="banner"> 
 
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <p class="start-title">Start Your Programming Journey Here With Us And You Will Feel The Difference</p>
                 <p>If you are new to the competitive Programming then you should start with this problem set and complete it step by step also follow the instruction given there.</p>
-                <a target="__blank" href="https://docs.google.com/spreadsheets/d/1iJZWP2nS_OB3kCTjq8L6TrJJ4o-5lhxDOyTaocSYc-k/edit#gid=84654839"> <img src="static/image/click.png" class="click-btn" alt=""> Click Here</a>
+                <a target="__blank" href="https://docs.google.com/spreadsheets/d/1iJZWP2nS_OB3kCTjq8L6TrJJ4o-5lhxDOyTaocSYc-k/edit#gid=84654839"> <img src="{% static 'image/click.png'%}" class="click-btn" alt=""> Click Here</a>
             </div>
     
             <div class="col-md-6 ">
-                <img src="static/image/bannerlogo.png" class="" id="diu-img" alt="">
+                <img src="{% static 'image/bannerlogo.png' %}" class="" id="diu-img" alt="">
             </div>
         </div>
       
